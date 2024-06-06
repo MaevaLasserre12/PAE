@@ -18,6 +18,9 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
 }
 
 .overlay {
@@ -44,6 +47,7 @@ body, html {
 
 .logo {
     height: 220px;
+    width: 250px;
     border-radius: 15px;
     border: black 3px solid;
 }
