@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaging Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="overlay">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="images/logo.webp" alt="Logo" class="logo">
+                    <div class="welcome-text">Bienvenue</div>
+                </div>
+                <div class="date" id="currentDate"></div>
+            </div>
+            <div class="buttons">
+                <button class="btn">Déposer un PDF</button>
+                <button class="btn">Voir les statistiques</button>
+                <button class="btn">Modifier les données</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript pour afficher la date du jour
+        function formatDate(date) {
+            var day = String(date.getDate()).padStart(2, '0');
+            var month = String(date.getMonth() + 1).padStart(2, '0'); // Les mois commencent à 0
+            var year = date.getFullYear();
+            return day + '/' + month + '/' + year;
+        }
+
+        document.getElementById('currentDate').innerText = formatDate(new Date());
+    </script>
+</body>
+</html>
