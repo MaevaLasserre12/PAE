@@ -21,6 +21,7 @@ body, html {
     image-rendering: auto;
     image-rendering: crisp-edges;
     image-rendering: high-quality;
+    filter: blur(1px);
 }
 
 .overlay {
