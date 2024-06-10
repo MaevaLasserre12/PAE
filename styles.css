@@ -18,10 +18,6 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: high-quality;
-    filter: blur(1px);
 }
 
 .overlay {
